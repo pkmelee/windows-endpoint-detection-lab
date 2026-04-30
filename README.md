@@ -59,7 +59,8 @@ User: labuser\labfriend
 IntegrityLevel: High
 Hashes: MD5=A97E6573B97B44C96122BFA543A82EA1
         SHA256=0FF6F2C94BC7E2833A5F7E16DE1622E5DBA70396F31C7D5F56381870317E8C46
-ParentImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+![T1059.001 — encoded PowerShell captured by Sysmon Event ID 1](screenshots/t1059-encoded-powershell.png)
+
 ```
 
 ### Detection Logic
@@ -86,6 +87,7 @@ While this lab uses a benign chain to demonstrate the technique, the same parent
 ```powershell
 cmd.exe /c "powershell.exe -Command Write-Host 'T1055-PARENT-CHILD-MARKER'; whoami"
 ```
+![T1055 — cmd.exe spawning powershell.exe captured by Sysmon Event ID 1](screenshots/t1055-parent-child-chain.png)
 
 This creates the chain: `cmd.exe → powershell.exe → whoami.exe` — a 3-deep process tree showing recon behavior from a non-standard origin.
 
