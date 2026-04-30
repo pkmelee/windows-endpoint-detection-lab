@@ -59,7 +59,7 @@ User: labuser\labfriend
 IntegrityLevel: High
 Hashes: MD5=A97E6573B97B44C96122BFA543A82EA1
         SHA256=0FF6F2C94BC7E2833A5F7E16DE1622E5DBA70396F31C7D5F56381870317E8C46
-[T1059.001 — encoded PowerShell captured by Sysmon Event ID 1](screenshots/t1059-encoded-powershell.png)
+![T1059.001 — encoded PowerShell captured by Sysmon Event ID 1](screenshots/t1059-encoded-powershell.png)
 
 ```
 
